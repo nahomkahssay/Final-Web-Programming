@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/helina-css/helinastyled1.css">
+    <!--reference of cloudflare site is used for buttons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Burrito Bowl</title>
+</head>
+<!--window.scroll(0,0) is used for the onload event, it will redriect the page to the beginning-->
+<body onload="window.scroll(0,0);">
+    <!--sticky header is created(even if we scroll the header will remain fixed)-->
+    <header id="myHeader">
+        <div class="header" id="sticky">
+            <div class="container">
+                <div class="logo">
+                    <!--Logo is placed here-->
+                    <a href="#"><img src="images/helina_images/logo.jpeg" alt="logo"></a>
+                </div>
+                <div class="navbar" >
+                    <div class="icon-bar" >
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <!--navigation bars are created using a tag-->
+                    <ul id="nav-lists">
+                        <li class="close"><span onclick="Hide()">×</span></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="recipesall.html">Recipe</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                        <li><a href="Contact_Form.html">Contact Us</a></li>
+                      </ul>
+                </div>
+                <!-- button is used with a reference link and is set with 3x size-->
+                <button id="hamButton" class="fa fa-bars fa-3x" onclick="showMenu()">
+                </div>
+        </div>
+    </header>
+    <div class="content">
+        <div id="LeftSlider" >
+            <!--hide button is created to hide the menu with an onclick event-->
+            <button onclick="hideMenu()">
+                <i class="fa fa-solid fa-close fa-3x"></i>
+            </button> 
+            <table>
+                <!--table row as tr, table data as td-->
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="about-us.html">About</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="recipesall.html">Recipe</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="FAQs.html">FAQs</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="Contact_Form.html">Contact Us</a></td>
+                </tr>
+            </table>   
+        </div>
+        <!--body image is alloted using img src tag-->
+        <img src="images/helina_images/mexican food background.jpg">
+        <h1 id="burrito">Burrito Bowl</h1>
+        <!--onscrollevent is called by passing an id into it so it will redirect it to the js function-->
+        <button class="btn1 tt1" onclick="scrollEvent('ingredientsCard1')">
+            <img src="images/helina_images/ingredients.png">
+            <span class="tooltiptext">Check this out for detailed recipe..</span>
+        </button>
+        <!--Ingredients list is made by giving it a separate division-->
+        <div id="ingredientsCard1"  >
+            <h1>Ingredients</h1>
+            <div id="innerCard1">
+                <ul>
+                    <li> 1 cup uncooked rice</li>
+                    <li>1 cup salsa, homemade or store-bought</li>
+                    <li>3 cups chopped Romaine lettuce</li>
+                    <li>1 (15.25-ounce) can whole kernel corn, drained</li>
+                    <li>(15-ounce) black beans, drained and rinsed</li>
+                    <li>2 Roma tomatoes, diced</li>
+                    <li>1 avocado, halved, seeded, peeled and diced</li>
+                    <li>2 tablespoons chopped fresh cilantro leaves</li>
+                    <img src="images/helina_images/healthy burrito bowl.jpg">
+                    <div id="iC1">
+                        <h3>For the chipotle cream sauce</h3>
+                        <li>1 cup sour cream</li>
+                        <li>1 tablespoon chipotle paste*</li>
+                        <li>1 clove garlic, pressed</li>
+                        <li>Juice of 1 lime</li>
+                        <li>1/4 teaspoon salt, or more, to taste</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--onscrollevent is called -->
+        <button class="btn2 tt2" onclick="scrollEvent('ingredientsCard2')">
+            <i class="fa fa-solid fa-fire fa-2x"></i>
+            <!--tooltip text means on hovering to the particular button a text will appear on its side-->
+            <span class="tooltiptext">Estimated calorie</span>
+        </button>
+        <hr>
+        <!--This division  is created to represent the Calorie/Nutrients included in the food -->
+        <p id="date"></p>
+        <div id="ingredientsCard2">
+            <div id="innerCard2">
+                <h1>Nutrition Facts</h1>
+                <h3>Serving Size</h3>
+                <h3>Servings Per Container 6</h3>
+                <hr>
+                <h4>Amount Per Serving</h4>
+                <hr>
+                <h3> Calories 371.9 &emps; Calories from Fat 102.6 </h3>
+                <hr>% Daily Value*
+                <hr>
+                <h4>Total Fat 11.4g &emps;&emps;18%</h4>
+                <hr>
+                <h4>Saturated Fat 4.2g &emps;&emps;21%</h4>
+                <hr>
+                <h4>Trans Fat 0g</h4>
+                <hr>
+                <h4>Cholesterol 13.4mg &emps;&emps;4%</h4>
+                <hr>
+                <h4>Sodium 790mg &emps;&emps;33%</h4>
+                <hr>
+                <h4>Total Carbohydrate 58.9g &emps;&emps;20%</h4>
+                <hr>
+                <h4> Dietary Fiber 10.8g &emps;&emps;43%</h4>
+                <hr>
+                <h4>Sugars 4.8g &emps;&emps;</h4>
+                <hr>
+                <h4> Protein 12.7g &emps;&emps;25%</h4>
+                <hr>
+                <h4>*Percent Daily Values are based on a 2,000
+                    calorie diet.Your daily values may be higher or lower
+                    depending on your calorie needs. </h4>
+                
+            </div>
+        </div>
+        
+        <!--onscrollevent is called -->
+        <button class="btn3 tt3" onclick="scrollEvent('ingredientsCard3')">
+            <i class="fa fa-solid fa-book fa-2x"></i>
+            <span class="tooltiptext">Steps to get the recipe</span>
+        </button>
+        <!--This division  is created to represent the method of making burritos(Direction) -->
+        <div id="ingredientsCard3">
+            <hr>
+            <h1>Directions</h1>
+            <div id="innerCard3">
+                <ul>
+                    <li>To make the chipotle cream sauce, whisk together sour cream, chipotle paste, garlic, lime juice
+                        and salt; set aside.</li>
+                    <li>In a large saucepan of 1 1/2 cups water, cook rice according to package instructions; let cool
+                        and stir in salsa; set aside.</li>
+                    <li>To assemble the bowls, divide rice mixture into serving bowls; top with lettuce, corn, black
+                        beans, tomatoes, avocado and cilantro.</li>
+                    <li>Serve immediately, drizzled with chipotle cream sauce.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer is made here-->
+    <footer>
+        <div class="footer-wrap">
+            <div class="About_US">
+                <h3>About Us</h3>
+                <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some
+                    new receipe that world can explore.</p>
+                <p><a href="#" class="readmore">Read more</a></p>
+            </div>
+            <div class="navi">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Receipes</a></li>
+                    <li><a href="#">Our Chef's</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <h3>Address</h3>
+                <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+            </div>
+            <div class="phone">
+                <h3>Telephone</h3>
+                <p>
+                    <a href="#">+1 234 5678 910</a> <br>
+                    <a href="#">+2 234 5678 910</a>
+                </p>
+            </div>
+            <div class="newsletter">
+                <h3>Join our newsletter</h3>
+                <p>Be the first to know our latest updates and news!</p>
+                <form action="#" method="">
+                    <div class="form-subscribe">
+                        <input type="email" placeholder="Enter your email">
+                        <input type="submit" value="Subscribe" class="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!--javascript src is given using script tag-->
+    <script src="js/helina-js/helina1.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>World Cuisines</title>
+  <meta charset="utf-8" />
+  <link href="styles/vishesh-main.css" rel="stylesheet" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" rel="javascript">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js" rel="javascript"> -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="icon" href="images/Reema_images/logo.jpeg">
+  <!--used to show the icon in the tab-->
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="images/Vishesh-images/new-logo.jpg" alt="logo"></a>
+        </div>
+        <div class="navbar">
+
+          <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="recipesall.html">Recipe</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Contact_Form.html">Contact Us</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/Vishesh-images/banner.png" style="width:100%">
+          <div class="text">Find the World Cuisines here</div>
+          <div class="text2">Find recipes from around the world made by people from around the world</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Vishesh-images/banner.png" style="width:100%">
+          <div class="text">Cuisines from around the world</div>
+          <div class="text2">Find recipes from around the world made by people from around the world</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Vishesh-images/banner.png" style="width:100%">
+          <div class="text">Mouthwatering Cuisines at your Home</div>
+          <div class="text2">Find recipes from around the world made by people from around the world</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- RECIPES SECTION START-->
+
+      <section id="food">
+        <h3 style="text-align: center; font-size: 40px;">Explore the Recipes</h3>
+        <div style="text-align: center; padding-bottom: 20px;">
+          <a href="recipesall.html" class="btn btn-primary">View All</a>
+        </div>
+
+        <div class="food-container">
+          <div class="food-type">
+            <div class="img-container">
+              <img src="images/Darshan-Images/FinalKofta.jpg" alt="food" />
+              <div class="img-content">
+                <h4>Malai Kofta</h4>
+                <a href="Malai_Kofta.html" class="btn btn-primary">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="food-type">
+            <div class="img-container">
+              <img src="images/helina_images/nachos.jpg" alt="food" />
+              <div class="img-content">
+                <h4>chipotle cream sauce</h4>
+                <a href="helina1.html" class="btn btn-primary">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="food-type">
+            <div class="img-container">
+              <img src="images/images_Kaiyan/Chicken-Poke-Bowl-12.jpg" alt="food" />
+              <div class="img-content">
+                <h4>Chicken Poke Bowl</h4>
+                <a href="recipe3_Kaiyan.html" class="btn btn-primary">learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- RECIPES SECTION END-->
+
+      <!-- ABOUT SECTION START -->
+      <img src="images/Vishesh-images/banner-thumb.png" style="float: left; margin-top: 4rem;" alt="">
+      <div class="about-content">
+        <br>
+        <br>
+        <h3>Curated and Crafted with Love</h3>
+        <h2>World Class Recipes at a single page</h2>
+        <p>A recipe is a formula of ingredients and a list of instructions for creating prepared foods. It is used to
+          control quality, quantity, and food costs in a foodservice operation. A recipe may be simple to complex based
+          on the requirements of the operation and the intended user. For example, an experienced chef may need a recipe
+          with only a few details, while a beginner cook may need more information about ingredients, preparation steps,
+          cooking times and temperatures, visual cues, and equipment requirements.
+
+          Recipes are formatted differently depending on its author and the intended use. Professional chefs record
+          recipes in pocket notebooks, binders, or on digital devices, using simple to complex details, depending on the
+          type of recipe and the experience level of the chef. Information might include ingredients, prep steps,
+          kitchen notes, and hand-drawn plate presentations. Recipes for the general consumer must be written with the
+          assumption that the intended user knows very little about food preparation. When writing recipes that others
+          will be use in your kitchen, provide as much information so that anyone who is preparing, inexperienced or
+          skilled, can easily understand. Include information on ingredients, prep steps for fabricating or measuring,
+          cooking instructions, recipe yield, and required equipment.
+
+
+        </p>
+      </div>
+
+      <!-- ABOUT SECTION END -->
+
+      <!-- CHEF's Section START-->
+      <br>
+      <br>
+      <h3 style="text-align: center; font-size: 40px;">Meet the Chefs</h3>
+      <div style="text-align: center; padding-bottom: 20px;">
+        <a href="about-us.html" class="btn btn-primary">View All</a>
+      </div>
+      <section class="chef">
+
+        <div class="card">
+          <img src="images/Vishesh-images/Kaiyen.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h5 style="color: #333;"><b>Kaiyen Chan</b></h5> <br>
+            <p>Sanghai</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Vishesh-images/vishesh.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h5 style="color: #333;"><b>Vishesh Makwana</b></h5>
+            <p>Gujarat, India</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Vishesh-images/helina.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h5 style="color: #333;"><b>Helina Gandhi</b></h5> <br>
+            <p>Vadodara, India</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Vishesh-images/darshan.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h5 style="color: #333;"><b>Darshankumar Patel</b></h5>
+            <p>Navsari, India</p>
+          </div>
+        </div>
+      </section>
+      <br>
+      <br>
+      <hr>
+      <!-- CHEF's Section END-->
+
+      <!-- CONTACT SECTION START -->
+      <section id="contact">
+        <div class="contact-container">
+          <div class="contact-img">
+            <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+          </div>
+
+          <div class="form-container">
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="First and Last Name" name="name" id="name_input" required
+              onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span>
+            <label for="email"></label>
+            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required
+              onkeyup='validateEmail()'>
+            <span class='error-message' id='email-error'></span>
+            <textarea name="message" placeholder="I'd like to Ask" id="message_input" cols="30" rows="5" required
+              onkeyup='validateMessage()'></textarea>
+            <span class='error-message' id='message-error'></span>
+
+            <button class="btn btn-primary" onclick='validateForm()' value="Send Message" id="">Send Message</button>
+            <span class='error-message' id='submit-error'></span>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION END -->
+
+
+    </main>
+    <footer>
+      <div class="footer-wrap">
+        <div class="About_US">
+          <h3>About Us</h3>
+          <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new
+            receipe that world can explore.</p>
+          <p><a href="#" class="readmore">Read more</a></p>
+        </div>
+        <div class="navi">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipesall.html">All Receipes</a></li>
+            <li><a href="#">Our Chef's</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="Contact_Form.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h3>Address</h3>
+          <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+        </div>
+        <div class="phone">
+          <h3>Telephone</h3>
+          <p>
+            <a href="#">+1 234 5678 910</a> <br>
+            <a href="#">+2 234 5678 910</a>
+          </p>
+        </div>
+        <div class="newsletter">
+          <h3>Join our newsletter</h3>
+          <p>Be the first to know our latest updates and news!</p>
+          <form action="#" method="">
+            <div class="form-subscribe">
+              <input type="email" placeholder="Enter your email">
+              <input type="submit" value="Subscribe" class="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var navList = document.getElementById("nav-lists");
+      function Show() {
+        navList.classList.add("_Menus-show");
+      }
+
+      function Hide() {
+        navList.classList.remove("_Menus-show");
+      }
+    </script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!-- FORM VALIDATION START-->
+    <script type="text/javascript">
+      function validateName() {
+
+        var name = document.getElementById('name_input').value;
+
+        if (name.length == 0) {
+
+          producePrompt('Name is required', 'name-error', 'red')
+          return false;
+
+        }
+
+        if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+
+          producePrompt('First and last name, please.', 'name-error', 'red');
+          return false;
+
+        }
+
+        producePrompt('Valid', 'name-error', 'green');
+        return true;
+
+      }
+
+      function validateEmail() {
+
+        var email = document.getElementById('email_input').value;
+
+        if (email.length == 0) {
+
+          producePrompt('Email Invalid', 'email-error', 'red');
+          return false;
+
+        }
+
+        if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+          producePrompt('Email Invalid', 'email-error', 'red');
+          return false;
+
+        }
+
+        producePrompt('Valid', 'email-error', 'green');
+        return true;
+
+      }
+
+      function validateMessage() {
+        var message = document.getElementById('message_input').value;
+        var required = 30;
+        var left = required - message.length;
+
+        if (left > 0) {
+          producePrompt(left + ' more characters required', 'message-error', 'red');
+          return false;
+        }
+
+        producePrompt('Valid', 'message-error', 'green');
+        return true;
+
+      }
+
+      function validateForm() {
+        if (!validateName() || !validateEmail() || !validateMessage()) {
+          jsShow('submit-error');
+          producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+          setTimeout(function () { jsHide('submit-error'); }, 2000);
+          return false;
+        }
+        else {
+          console.log("Submitted Successfuully");
+          alert("Submitted Successfully");
+        }
+      }
+      function jsShow(id) {
+        document.getElementById(id).style.display = 'block';
+      }
+      function jsHide(id) {
+        document.getElementById(id).style.display = 'none';
+      }
+
+      function producePrompt(message, promptLocation, color) {
+
+        document.getElementById(promptLocation).innerHTML = message;
+        document.getElementById(promptLocation).style.color = color;
+
+      }
+
+    </script>
+    <!-- FORM VALIDATION END -->
+  </div>
+</body>
+
+</html>

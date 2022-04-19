@@ -1,0 +1,206 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- used to tell the browser to use the UTF-8 character encoding, which is a method of converting characters into machine-readable code-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/Reema_CSS/Reema_recipe1.css"> <!--used to link the css file related to this html code-->
+        <link rel="icon" href="images/Reema_images/logo.jpeg"> <!--used to show the icon in the tab-->
+        <title>Mint & basil griddled peach salad</title> <!--Name of the Page-->
+    </head>
+    <!--Body of the program-->
+    <body>
+        <!--Header-It is a header of a page-->
+        <header>
+            <div class="container">
+              <div class="logo">
+                <a href="#"><img src="images/Reema_images/logo.jpeg" alt="logo"></a>
+              </div>
+              <div class="navbar">
+      
+                <div class="icon-bar" onclick="Show()"> <!--Calling the show function which is in the javascript file-->
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+                <ul id="nav-lists">
+                  <li class="close"><span onclick="Hide()">×</span></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="recipesall.html">Recipe</a></li>
+                  <li><a href="FAQs.html">FAQs</a></li>
+                  <li><a href="Contact_Form.html">Contact Us</a></li>
+                </ul>
+      
+              </div>
+            </div>
+        </header>
+        <main>
+          <h1>Mint & basil griddled peach salad</h1>
+
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/Reema_images/spices.jpg" >
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/Reema_images/noodles1.jpg" >
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/Reema_images/salad_bowl.jpg" >
+              <div class="text">Caption Three</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div id="dot">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+
+
+
+
+          <img src="images/Reema_images/salad2.jpg" alt="Photo of Salad" id="img3">
+          <!--Fieldset is used to make a box for a particular items-->
+          <!--This fieldset is for displaying the similar recipes like this-->
+          <fieldset id="similar">
+            <label for="Similar">Similar Recipes</label></br>
+            <figure>
+              <img src="images/Reema_images/salad_main.jpg">
+              <figcaption> <!--figcaption is used to give the name of the figure-->
+                <a href="Reema_recipe2.html"> Green salad with Cherries</a> 
+              </figcaption></br>
+              <img src="images/Reema_images/salad3.jpg">
+              <figcaption>
+                <a href="Reema_recipe3.html"> Turkey salad with grapes and walnuts</a> 
+              </figcaption>
+            </figure>
+          </fieldset>
+          <!--This fieldset is for to give basic info about the recipe-->
+          <fieldset id="details">
+            <legend> <!--legend command is used to give the name of particular fieldset and it will print in between the border of that box-->
+               <img src="images/Reema_images/clock.png" id="clock">
+            </legend>
+            <h3>Prep: 10 mins</h3>
+            <h3>Cook: 25 mins</h3>
+            <h3>Yield: Serves: 2</h3>
+            <h3><img src="images/Reema_images/chef.png"> Easy</h3>
+          </fieldset>
+          
+          <p>This vegan salad makes a healthy and filling meal, providing 4 of your 5-a-day.</br>
+          Enjoy hearty quinoa, creamy avocado and juicy griddled peaches.</p>
+          <div class="box_ed">
+            <img src="images/Reema_images/glutein free.jpg" class="glutein">
+            <h4> Glutein-free</h4>
+            <img src="images/Reema_images/healthy logo.jpg" class="glutein">
+            <h4> Healthy</h4>
+            <img src="images/Reema_images/vegan.jpg" class="glutein">
+            <h4> Vegan</h4>
+          </div>
+          <!--Nutritions in this recipe as per the amount of items we can see in the ingredients list-->
+          <h2 id="adjust">Nutritions per serve:</h2>
+          <div class="box_ed">
+            <p class="box">kcal</br>395</p>
+            <p class="box">fat</br>18g</p>
+            <p class="box">saturates</br>3g</p>
+            <p class="box">carbs</br>40g</p>
+            <p class="box">sugars</br>11g</p>
+            <p class="box">fibre</br>14g</p>
+            <p class="box">protein</br>10g</p>
+            <p class="box">salt</br>0.7g</p>
+          </div>
+          <!--Ingredients used in this recipe-->
+          <h2>Ingredients</h2>
+          <ul>
+            <li>1 lime , zested and juiced</li>
+            <li>1 tbsp rapeseed oil</li>
+            <li>tbsp finely chopped mint , plus a few whole leaves to serve</li>
+            <li>tbsp basil , chopped</li>
+            <li>2 peaches (300g), quartered</li>
+            <li>quinoa</li>
+            <li>160g fine beans , trimmed and halved</li>
+            <li>1 small red onion , very finely chopped</li>
+            <li>1 large Little Gem lettuce (165g), roughly chopped</li>
+            <li>½ x 60g pack rocket</li>
+            <li>1 small avocado , stoned and sliced</li>
+          </ul>
+          <!--Steps to prepare the recipe-->
+          <div id="steps">
+            <div id="step_start">
+            <h2><img src="images/Reema_images/food.png" class="glutein">----------------------------------------------------------------------------------<img src="images/Reema_images/food.png" class="glutein"></h2>
+            <h2>Step 1:</h2>
+            <h3>Mix the lime zest and juice, oil, mint and basil, then put half in a bowl with the peaches. Meanwhile, cook the quinoa following pack instructions.</h3>
+            <h2>Step 2:</h2>
+            <h3>Cook the beans for 3-4 mins until just tender. Meanwhile, griddle the peaches for 1 min on each side. If you don’t have a griddle pan, use a large non-stick frying pan with a drop of oil.</h3>
+            <h2>Step 3:</h2>
+            <h3>Drain the quinoa and divide between shallow bowls. Toss the warm beans and onion in the remaining mint mixture and pile on top of the quinoa with the lettuce and rocket. Top with the avocado and peaches and scatter over the mint leaves. Serve while still warm.</h3>
+          </div>
+          <form name="form1">
+            <h2 class="boldFont">Would you like to receive an alert for the new receipes like this? </h2>
+            <label for="myCheck">Yes</label> 
+            <input type="checkbox" id="myCheck" > <!--calling the myfunction when checkbox is true-->
+            <input type="email" id="email" name="email" placeholder="Enter your email here..." >
+            <input type="button" value="Submit" id="e_submit" onclick="validateEmail(this, document.form1.email)">
+            <p id="output"></p>
+            <h2 class="boldFont">If you want to give any comments regarding this recipe, then please comment in following comment box.</h2>
+            <h2 class="boldFont">Comment-box:</h2>
+            <!--textarea is used to give some space to the user to enter some text-->
+            <textarea name="comments" id="comment"></textarea></br> <!--some text area is provided for the user to comment if they want to-->
+            <input type="button" value="Submit" id="submit" onclick="Submit()" > <!--when submit button will clicked, it will call the submit function from the javascript file-->
+          </form>
+          </main>
+        <!--Footer of the page-->
+        <footer>
+          <div class="footer-wrap">
+            <div class="About_US">
+              <h3>About Us</h3>
+              <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new receipe that world can explore.</p>
+              <p><a href="#" class="readmore">Read more</a></p>
+            </div>
+            <div class="navi">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="recipesall.html">Recipe</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li><a href="Contact_Form.html">Contact Us</a></li>          
+              </ul>
+            </div>
+            <div class="address">
+              <h3>Address</h3>
+              <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+            </div>
+            <div class="phone">
+              <h3>Telephone</h3>
+              <p>
+                <a href="#">+1 234 5678 910</a> <br>
+                <a href="#">+2 234 5678 910</a>
+              </p>
+            </div>
+            <div class="newsletter">
+              <h3>Join our newsletter</h3>
+              <p>Be the first to know our latest updates and news!</p>
+              <!--form command is used for the subscription of the user-->
+              <form action="#" method="">
+                <div class="form-subscribe">
+                  <!--as a input type, email is used to tell the user to enter e-main. it will accept certain structure of text such as @ because email id always have an @ sign-->
+                  <!--place holder is used to just display the information, It will be clear once user starts to write in the box-->
+                  <input type="email" placeholder="Enter your email"> 
+                  <input type="submit" value="Subscribe"> <!--using the submit type button, with the name subscribe-->
+                </div>
+              </form>
+            </div>
+          </div>      
+        </footer>
+        <script src="js/Reema_js/app.js"></script> <!--Javascript file is added here -->
+    </body>
+</html>

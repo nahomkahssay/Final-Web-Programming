@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <title>Food Website</title>
+  <link rel="stylesheet" href="styles/helina-css/H_customize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header id="myHeader">
+    <div class="header" id="sticky">
+      <div class="container">
+        <div class="logo">
+          <!--Logo is placed here-->
+          <a href="#"><img src="images/helina_images/logo.jpeg" alt="logo"></a>
+        </div>
+        <div class="navbar">
+          <div class="icon-bar">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <!--navigation bars are created using a tag-->
+          <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="recipesall.html">Recipe</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Contact_Form.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- button is used with a reference link and is set with 3x size-->
+        <button id="hamButton" class="fa fa-bars fa-3x" onclick="showMenu()">
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div id="LeftSlider">
+      <!--hide button is created to hide the menu with an onclick event-->
+      <button onclick="hideMenu()">
+        <i class="fa fa-solid fa-close fa-3x"></i>
+      </button>
+      <table>
+        <!--table row as tr, table data as td-->
+        <tr>
+          <td><a href="index.html">Home</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="about-us.html">About</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="recipesall.html">Recipe</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="FAQs.html">FAQs</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="Contact_Form.html">Contact Us</a></td>
+        </tr>
+      </table>
+    </div>
+    <video controls autoplay>
+      <source src="images/helina_images/burrito _video.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="time">
+      <br>
+      <!-- <h3 id="dot">
+        ........................................................................................................................................
+      </h3> -->
+      <h3 id="dot">Opening Hours</h3>
+      <!-- <h3>
+        ........................................................................................................................................
+      </h3> -->
+      <br>
+      <h4>Monday to Friday:10:00 am to 12:00 pm</h4>
+      <h3 id="open">OPEN</h3>
+      <h4>Saturday and Sunday:10:00 am to 11:00 pm</h4>
+      <h3 id="closed">CLOSED</h3>
+    </div>
+
+    <div class="element">
+      <img src="images/helina_images/deal.jpg">
+    </div>
+
+
+    <section class="content-section">
+      <h2 class="section-header" data-text="Food">Food</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Tacos</span>
+          <img class="shop-item-image" src="images/helina_images/tacos2.jpg">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$12.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Burritos</span>
+          <img class="shop-item-image" src="images/helina_images/healthy burrito bowl.jpg">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$14.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Nachos</span>
+          <img class="shop-item-image" src="images/helina_images/nachos2.jpg">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$9.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Enchiladas</span>
+          <img class="shop-item-image" src="images/helina_images/enchiladas.jpg">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2 class="section-header">Ice-Cream</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Avocado</span>
+          <img class="shop-item-image" src="images/helina_images/avocado.jpg">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Mermaid</span>
+            <img class="shop-item-image" src="images/helina_images/mermaid.jpeg">
+            <div class="shop-item-details">
+              <span class="shop-item-price">$19.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Sundae</span>
+              <img class="shop-item-image" src="images/helina_images/sundae.jpeg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+              </div>
+            </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Chocolate</span>
+          <img class="shop-item-image" src="images/helina_images/chocolate.jpg">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$6.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="About_US">
+          <h3>About Us</h3>
+          <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new
+            receipe that world can explore.</p>
+          <p><a href="#" class="readmore">Read more</a></p>
+        </div>
+        <div class="navi">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="recipesall.html">Recipe</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Contact_Form.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h3>Address</h3>
+          <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+        </div>
+        <div class="phone">
+          <h3>Telephone</h3>
+          <p>
+            <a href="#">+1 234 5678 910</a> <br>
+            <a href="#">+2 234 5678 910</a>
+          </p>
+        </div>
+        <div class="newsletter">
+          <h3>Join our newsletter</h3>
+          <p>Be the first to know our latest updates and news!</p>
+          <form action="#" method="">
+            <div class="form-subscribe">
+              <input type="email" placeholder="Enter your email">
+              <input type="submit" value="Subscribe" class="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/helina-js/H_customize.js" async></script>
+</body>
+
+</html>

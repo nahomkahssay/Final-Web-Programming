@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>World Cuisines</title>
+    <meta charset="utf-8" />
+    <link href="styles/vishesh-main.css" rel="stylesheet" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="images/Reema_images/logo.jpeg">
+    <!--used to show the icon in the tab-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="images/vishesh-images/new-logo.jpg" alt="logo"></a>
+                </div>
+                <div class="navbar">
+
+                    <div class="icon-bar" onclick="Show()">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <ul id="nav-lists">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="recipesall.html">Recipe</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                        <li><a href="Contact_Form.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- <div class="banner">
+                <img src="images/banner.png" style="border-radius: 30px; width: 100%;" alt="">
+            </div>
+
+            <div class="banner-text">
+                <h2>Find the world Cuisines here</h2>
+                <h4 style="text-align: center;">Find recipes from around the <br> world made by people from <br> around
+                    the
+                    world</h4>
+            </div> -->
+            <h3 style="font-size: 40px;">Frequently Asked Questions</h3>
+
+            <!-- (A) CHECKBOX TABS -->
+            <div class="tab">
+                <input id="tab-1" type="checkbox">
+                <label for="tab-1">CAN I SUBSTITUTE THIS INGREDIENT?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">I recommend using the specified ingredients listed in
+                        the recipe whenever possible for optimal
+                        results. I understand that you may have dietary restrictions or simply do not have a particular
+                        ingredient on hand, but please remember that by using a substitution, I cannot speak for how
+                        much this will change in the overall taste or texture of the dish without further recipe
+                        testing.
+
+                        Using a substitution may also result in a mediocre outcome.</p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input id="tab-2" type="checkbox">
+                <label for="tab-2">I TRIED ONE OF YOUR RECIPES BUT IT DID NOT TURN OUT. WHAT DID I DO WRONG?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">Please understand that it is very hard for me to
+                        specifically answer this question since I am not
+                        in the kitchen with you. That being said, I only share recipes that have been successful and
+                        well-tested in my own kitchen, but I understand that failures and mishaps can happen.
+                        <br>
+                        Instead of blaming the recipe, it is important to remember that many factors are at play here
+                        that may result in a failed outcome. But with a little bit more information, we can troubleshoot
+                        what went wrong to have a successful turnaround next time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input id="tab-3" type="checkbox">
+                <label for="tab-3">WHAT IS THE BEST WAY TO STORE LEFTOVERS? HOW LONG WILL THIS KEEP?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aut perspiciatis alias amet deserunt
+                        consectetur error eius dolor sit, praesentium asperiores, id voluptatibus fugit aliquid
+                        blanditiis rem, tempore atque saepe sequi.</p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input id="tab-4" type="checkbox">
+                <label for="tab-4">Which part of the world do these recipes belong?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">As I am not an expert on food safety, I am not
+                        comfortable answering these questions. Methods for
+                        optimal food storage and shelf life should be based on good judgment and what you are personally
+                        comfortable with.</p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input id="tab-5" type="checkbox">
+                <label for="tab-5">CAN I USE A SLOW COOKER OR INSTANT POT FOR THIS RECIPE INSTEAD?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">Please understand that it is very difficult to give
+                        exact conversion information without further
+                        recipe testing. As always, please use your best judgement to convert my recipes to utilize a
+                        slow cooker or IP.</p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input id="tab-6" type="checkbox">
+                <label for="tab-6">CAN YOU SHARE THE NUTRITIONAL INFORMATION FOR THIS RECIPE?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">Unfortunately, as we are not a registered dietician,
+                        I am not comfortable sharing nutritional
+                        information for any of my recipes. We recommend utilizing online calorie counters at your
+                        discretion to obtain such information.
+                        <br>
+                        However, we have recently teamed up with an amazing nutritionist, Pam Gibson. She will be
+                        providing important nutritional information for select and new recipes at this time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input id="tab-7" type="checkbox">
+                <label for="tab-7">Should I have dinner before attending my class, or will I be eating there?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">You will be eating here! Our goal is to have the
+                        first menu item prepared and served within 30 minutes of the class start time. If this is later
+                        than you normally eat, we recommend having a light bite before class to tide you over. </p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input id="tab-8" type="checkbox">
+                <label for="tab-8">Will I get a copy of the recipes made during class?</label>
+                <div class="content">
+                    <p style="font-size: 20px; line-height: 26px;">Yes! Every student gets a recipe packet at the
+                        beginning of class so that they can follow along with the instructor in the Demonstration
+                        classes and in the Participation classes. You are welcome and encouraged to take these recipe
+                        packets home with you after class and try them. </p>
+                </div>
+            </div>
+            <!-- <h3 style="font-size: 40px;">Didnt Find the right Queston? Write to Us</h3> -->
+
+            <div id="containerForm">
+                <h2>&bull; Didnt Find the right Queston? Write to Us &bull;</h2>
+                <div class="underline">
+                </div>
+                <form id="contact_form">
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="My name is" name="name" id="name_input" required
+                            onkeyup='validateName()'>
+                        <span class='error-message' id='name-error'></span>
+                    </div>
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" placeholder="My e-mail is" name="email" id="email_input" required
+                            onkeyup='validateEmail()'>
+                        <span class='error-message' id='email-error'></span>
+                    </div>
+                    <div class="telephone">
+                        <label for="name"></label>
+                        <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required
+                            onkeyup='validatePhone()'>
+                        <span class='error-message' id='phone-error'></span>
+                    </div>
+                    <div class="message">
+                        <label for="message"></label>
+                        <textarea name="message" placeholder="I'd like to Ask" id="message_input" cols="30" rows="5"
+                            required onkeyup='validateMessage()'></textarea>
+                        <span class='error-message' id='message-error'></span>
+                    </div>
+                    <div class="submit">
+                        <button onclick='validateForm()' value="Send Message" id="">Send Message</button>
+                        <span class='error-message' id='submit-error'></span>
+                    </div>
+                </form>
+            </div><!-- // End #container -->
+
+            <br>
+            <br>
+        </main>
+
+        <footer>
+            <div class="footer-wrap">
+                <div class="About_US">
+                    <h3>About Us</h3>
+                    <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making
+                        some new receipe that world can explore.</p>
+                    <p><a href="#" class="readmore">Read more</a></p>
+                </div>
+                <div class="navi">
+                    <h3>&emsp;&emsp;Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipesall.html">All Receipes</a></li>
+                        <li><a href="#">Our Chef's</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="Contact_Form.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <h3>Address</h3>
+                    <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+                </div>
+                <div class="phone">
+                    <h3>Telephone</h3>
+                    <p>
+                        <a href="#">+1 234 5678 910</a> <br>
+                        <a href="#">+2 234 5678 910</a>
+                    </p>
+                </div>
+                <div class="newsletter">
+                    <h3>Join our newsletter</h3>
+                    <p>Be the first to know our latest updates and news!</p>
+                    <form action="#" method="">
+                        <div class="form-subscribe">
+                            <input type="email" placeholder="Enter your email">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script>
+            var navList = document.getElementById("nav-lists");
+            function Show() {
+                navList.classList.add("_Menus-show");
+            }
+
+            function Hide() {
+                navList.classList.remove("_Menus-show");
+            }
+        </script>
+        <script type="text/javascript">
+            function validateName() {
+
+                var name = document.getElementById('name_input').value;
+
+                if (name.length == 0) {
+
+                    producePrompt('Name is required', 'name-error', 'red')
+                    return false;
+
+                }
+
+                if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+
+                    producePrompt('First and last name, please.', 'name-error', 'red');
+                    return false;
+
+                }
+
+                producePrompt('Valid', 'name-error', 'green');
+                return true;
+
+            }
+
+            function validatePhone() {
+
+                var phone = document.getElementById('telephone_input').value;
+
+                if (phone.length == 0) {
+                    producePrompt('Phone number is required.', 'phone-error', 'red');
+                    return false;
+                }
+
+                if (phone.length != 10) {
+                    producePrompt('Include area code.', 'phone-error', 'red');
+                    return false;
+                }
+
+                if (!phone.match(/^[0-9]{10}$/)) {
+                    producePrompt('Only digits, please.', 'phone-error', 'red');
+                    return false;
+                }
+
+                producePrompt('Valid', 'phone-error', 'green');
+                return true;
+
+            }
+
+            function validateEmail() {
+
+                var email = document.getElementById('email_input').value;
+
+                if (email.length == 0) {
+
+                    producePrompt('Email Invalid', 'email-error', 'red');
+                    return false;
+
+                }
+
+                if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+                    producePrompt('Email Invalid', 'email-error', 'red');
+                    return false;
+
+                }
+
+                producePrompt('Valid', 'email-error', 'green');
+                return true;
+
+            }
+
+            function validateMessage() {
+                var message = document.getElementById('message_input').value;
+                var required = 30;
+                var left = required - message.length;
+
+                if (left > 0) {
+                    producePrompt(left + ' more characters required', 'message-error', 'red');
+                    return false;
+                }
+
+                producePrompt('Valid', 'message-error', 'green');
+                return true;
+
+            }
+
+            function validateForm() {
+                if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+                    jsShow('submit-error');
+                    producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+                    setTimeout(function () { jsHide('submit-error'); }, 2000);
+                    return false;
+                }
+                else {
+                    console.log("Submitted Successfuully");
+                    alert("Submitted Successfully");
+                }
+            }
+
+            function jsShow(id) {
+                document.getElementById(id).style.display = 'block';
+            }
+
+            function jsHide(id) {
+                document.getElementById(id).style.display = 'none';
+            }
+
+
+            function producePrompt(message, promptLocation, color) {
+
+                document.getElementById(promptLocation).innerHTML = message;
+                document.getElementById(promptLocation).style.color = color;
+
+            }
+
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/helina-css/helinastyled2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Tacos</title>
+</head>
+
+<body>
+  <header id="myHeader">
+    <div class="header" id="sticky">
+      <div class="container">
+        <div class="logo">
+          <!--Logo is placed here-->
+          <a href="#"><img src="images/helina_images/logo.jpeg" alt="logo"></a>
+        </div>
+        <div class="navbar">
+          <div class="icon-bar">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <!--navigation bars are created using a tag-->
+          <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="recipesall.html">Recipe</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Contact_Form.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- button is used with a reference link and is set with 3x size-->
+        <button id="hamButton" class="fa fa-bars fa-3x" onclick="showMenu()">
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div id="LeftSlider">
+      <!--hide button is created to hide the menu with an onclick event-->
+      <button onclick="hideMenu()">
+        <i class="fa fa-solid fa-close fa-3x"></i>
+      </button>
+      <table>
+        <!--table row as tr, table data as td-->
+        <tr>
+          <td><a href="index.html">Home</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="about-us.html">About</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="recipesall.html">Recipe</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="FAQs.html">FAQs</a></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="Contact_Form.html">Contact Us</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="popup">
+      <button id="close">&times;</button>
+      <h2>Welcome to the Food world</h2>
+      <p>
+        Here, you'll find the most convenient, easy to make recepies of tacos!!
+      </p>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+          <img src="images/helina_images/T1.jpg" id="s1" alt="first image of tacos">
+        </div>
+
+        <div class="slide">
+          <img src="images/helina_images/T2.jpg" id="s2" alt="second image of tacos">
+        </div>
+
+        <div class="slide">
+          <img src="images/helina_images/T3.jpg" id="s3" alt="Third image of tacos">
+        </div>
+
+        <div class="slide">
+          <img src="images/helina_images/T4.jpg" id="s4" alt="Fourth image of tacos">
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+    <div id="history"><br><br>
+      <div class="fancy-border">
+        <h1> Let's talk more about history </h1>
+        <h2><i>Yummy food is found here..</i></h2><br><br>
+        <p><i><b>The Name “Taco”: A Modern Invention</b></i>
+          The word "taco" is quite new.
+          It originated from Mexican silver miners in the 18 th century. Gunpowder was
+          wrapped in a paper like a “taquito” and inserted into rocks before detonation.
+          By this time, tacos were known as the food of the working class, which included
+          miners. This resulted in their portable street food being called “tacos de minero“,
+          also known as “miner’s tacos”. The tortilla in these miner’s tacos wasn’t a hard U-shaped
+          shell like we know today. Instead, it was a corn tortilla with a spicy filling. This daily
+          staple was filling, delicious, and affordable.
+        </p><br>
+        <p>
+          <i><b>The Best Taco… </b></i>Wasn’t Even Called a Taco.Did you know that Taco Bell’s Founder, Glen Bell,
+          found that “taco” was actually a word that Mexicans didn’t use to describe the meal? Instead,
+          Mexicans used other words to describe tacos that varied by region and local culture.“Taco” was
+          a word that Mexicans would use toward Americans to identify the dish. This is much like how the
+          Korean food chain Bon Chon calls their “egg rolls” “potstickers” on their mainstream menu but
+          the dish is properly called “mandu” among Koreans.
+        </p><br>
+        <p><i><b>That Crunchy Shell..</b></i> The pre-fried u-shaped taco shell we love didn’t come into existence until
+          the
+          1940s. Mexicans patented this idea first to expedite the taco-making process. Taco Bell took this
+          idea 10 years later to streamline their operations. Previously, tacos were cooked to order and were
+          just soft tacos. The pre-made crunchy taco shell made it easier to mass-produce the taco in America.
+          <i>Tacos Today</i>Nowadays, you can find tacos practically everywhere, from your local street food
+          stand to Chipotle. Each place has a different experience to offer, whether it’s authentic or a
+          Mexican-inspired fusion meal. Lately, due to a Millennial preference for “mom and pop” restaurants,
+          Taquerias are starting to become more popular. These restaurants offer authentic Mexican food like
+          Tacos al Pastor, de Barbacoa, and Carnitas. Mexican restaurants are turning away from Americanizing
+          their ingredients and are now bringing the real taste of Mexico—and Americans are falling in love.
+          These tacos are different from the ones Americans preferred in the 20th century.
+        </p><br>
+        <p>There’s no cheese or lettuce. Instead, you’ll see soft corn tortillas filled with authentically
+          flavored meat, cilantro, radish slices, grilled onion, and an assortment of hot sauces.Tacos of All Kinds The
+          future of tacos
+          looks bright. As confident chefs bring in the real taste of home, the cultural exchange only deepens
+          America’s appreciation for Mexico’s ancient taco. As a result, you can see more delicious fusion tacos
+          coming to be. In fact, you can sample tacos that embrace flavors from both Mexico and around the world
+          at Twisted Taco. Here you can find tacos loaded fresh tomato, lettuce, and sour cream with the authentic
+          flavor of cilantro while experimenting with delicious meats like gyro meat, American barbecue, and Korean
+          bulgogi. Come experience these great tastes for yourself today!
+        </p>
+      </div>
+    </div>
+
+
+    <button class="btn1 tt1" onclick="scrollEvent('ingredientsCard1')">
+      <img src="images/helina_images/ingredients.png">
+      <span class="tooltiptext">Check this out for detailed recipe..</span>
+    </button>
+    <!--Ingredients list is made by giving it a separate division-->
+    <div id="ingredientsCard1">
+      <h1>Ingredients</h1>
+      <div id="innerCard1">
+        <ul>
+          <li>1 lb. 90% to 93% lean ground beef</li>
+          <li>1 Tablespoon chili powder</li>
+          <li>1 teaspoon ground cumin</li>
+          <li>3/4 teaspoon salt</li>
+          <li>1/2 teaspoon dried oregano</li>
+          <li>1/2 teaspoon garlic powder</li>
+          <li>1/4 teaspoon ground black pepper</li>
+          <li>1/2 cup tomato sauce</li>
+          <li>1/4 cup water</li>
+          <li>12 taco shells - either hard shells or small 6-inch soft flour tortillas will work</li>
+          <li>Optional Taco Toppings: shredded cheese shredded lettuce, chopped tomatoes, diced red onion, taco sauce,
+            sour cream, guacamole, etc. </li>
+      </div>
+      </ul>
+    </div>
+  </div>
+  <!--onscrollevent is called -->
+  <button class="btn2 tt2" onclick="scrollEvent('ingredientsCard2')">
+    <i class="fa fa-solid fa-fire fa-2x"></i>
+    <!--tooltip text means on hovering to the particular button a text will appear on its side-->
+    <span class="tooltiptext">Estimated calorie</span>
+  </button>
+  <hr>
+  <!--This division  is created to represent the Calorie/Nutrients included in the food -->
+  <div id="ingredientsCard2">
+    <div id="innerCard2">
+      <h1>Nutrition Facts</h1>
+      <h3>Serving Size</h3>
+      <h3>Servings Per Container 6</h3>
+      <hr>
+      <h4>Amount Per Serving</h4>
+      <hr>
+      <h3> Calories 371.9 &emps; Calories from Fat 102.6 </h3>
+      <hr>% Daily Value*
+      <hr>
+      <h4>Total Fat 11.4g &emps;&emps;18%</h4>
+      <hr>
+      <h4>Saturated Fat 4.2g &emps;&emps;21%</h4>
+      <hr>
+      <h4>Trans Fat 0g</h4>
+      <hr>
+      <h4>Cholesterol 13.4mg &emps;&emps;4%</h4>
+      <hr>
+      <h4>Sodium 790mg &emps;&emps;33%</h4>
+      <hr>
+      <h4>Total Carbohydrate 58.9g &emps;&emps;20%</h4>
+      <hr>
+      <h4> Dietary Fiber 10.8g &emps;&emps;43%</h4>
+      <hr>
+      <h4>Sugars 4.8g &emps;&emps;</h4>
+      <hr>
+      <h4> Protein 12.7g &emps;&emps;25%</h4>
+      <hr>
+      <h4>*Percent Daily Values are based on a 2,000
+        calorie diet.Your daily values may be higher or lower
+        depending on your calorie needs. </h4>
+    </div>
+  </div>
+  <!--onscrollevent is called -->
+  <button class="btn3 tt3" onclick="scrollEvent('ingredientsCard3')">
+    <i class="fa fa-solid fa-book fa-2x"></i>
+    <span class="tooltiptext">Steps to get the recipe</span>
+  </button>
+  <!--This division  is created to represent the method of making burritos(Direction) -->
+  <div id="ingredientsCard3">
+    <hr>
+    <h1>Directions</h1>
+    <div id="innerCard3">
+      <ul>
+        <li>Add the beef to a large skillet over medium-high heat. Break the meat apart
+          with a wooden spoon. Add the chili powder, cumin, salt, oregano, garlic powder,
+          and pepper to the meat. Stir well. Cook until the meat is cooked through, about
+          6-8 minutes, stirring occasionally.
+        </li>
+        <li>Reduce the heat to medium. Add the tomato sauce and water. Stir to combine. Cook,
+          stirring occasionally, for 7-8 minutes, until some of the liquid evaporates but the
+          meat mixture is still a little saucy. Remove from the heat.
+        </li>
+        <li>Warm the taco shells according to their package directions.</li>
+        <li> Fill the taco shells with 2 heaping tablespoons of taco meat. Top with desired taco
+          toppings: shredded cheese, shredded lettuce, chopped tomatoes, diced red onion, taco sauce,
+          sour cream, guacamole, etc.</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+
+  <!--map-->
+  <div id="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.55662569989!2d-79.3829512847478!3d43.657392160177984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cab63b4553%3A0x55da329c904d70c!2s335%20Yonge%20St%2C%20Toronto%2C%20ON%20M5B%202L3!5e0!3m2!1sen!2sca!4v1649897797439!5m2!1sen!2sca"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!--content right -->
+  <div class="right">
+    <div class="content-right">
+      <h2>We Are Here For You!!</h2>
+      <table>
+        <tr>
+          <td>Email</td>
+          <td>worldcuisine@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>+1 666 444 5555</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>335 Yonge St ,<br>Toronto , Ontario ,<br> M5B 2L3</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!--form validation-->
+  <div class="content-section">
+    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+      <h2>Want to add your recepie!!</h2><br>
+      <div class="row">
+        <div class="row-group">
+
+          <label class="label" for="name">First Name</label>
+          <input type="text" class="input-control" name="name" id="fname" placeholder="Enter FirstName">
+          <div class="error"></div>
+        </div>
+        <div class="row-group">
+          <label class="label" for="name">Last Name</label>
+          <input type="text" class="input-control" name="name" id="lname" placeholder="Enter LastName">
+          <div class="error"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-group">
+          <label class="label" for="email">Email Address</label>
+          <input type="text" class="input-control" name="email" id="email" placeholder="Enter Email">
+          <div class="error"></div>
+        </div>
+        <div class="row-group">
+          <label class="label" for="phone">Contact Number</label>
+          <input type="text" class="input-control" name="phone" id="phone" maxlength="10"
+            placeholder="Enter ContactNumber">
+          <div class="error"></div>
+        </div>
+      </div>
+      <div class="group">
+        <label class="label" for="#">Message</label>
+        <textarea name="message" class="input-control" id="message" cols="30" rows="4"
+          placeholder="Enter Your Message"></textarea>
+        <div class="error"></div>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!--footer-->
+  <footer>
+    <div class="footer-wrap">
+      <div class="About_US">
+        <h3>About Us</h3>
+        <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new
+          receipe that world can explore.</p>
+        <p><a href="#" class="readmore">Read more</a></p>
+      </div>
+      <div class="navi">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="recipesall.html">Recipe</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact_Form.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="address">
+        <h3>Address</h3>
+        <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+      </div>
+      <div class="phone">
+        <h3>Telephone</h3>
+        <p>
+          <a href="#">+1 234 5678 910</a> <br>
+          <a href="#">+2 234 5678 910</a>
+        </p>
+      </div>
+      <div class="newsletter">
+        <h3>Join our newsletter</h3>
+        <p>Be the first to know our latest updates and news!</p>
+        <form action="#" method="">
+          <div class="form-subscribe">
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe" class="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="js/helina-js/helina2.js"></script>
+
+</body>
+
+</html>

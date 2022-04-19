@@ -1,0 +1,250 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- used to tell the browser to use the UTF-8 character encoding, which is a method of converting characters into machine-readable code-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/Reema_CSS/Reema_recipe3.css">
+  <link rel="icon" href="images/Reema_images/logo.jpeg">
+  <!--used to link the css file related to this html code-->
+  <title>Turkey salad with grapes & walnuts</title>
+  <!--Name of the Page-->
+</head>
+<!--Body of the program-->
+
+<body>
+  <!--Header-It is a header of a page-->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="images/Reema_images/logo.jpeg" alt="logo"></a>
+      </div>
+      <div class="navbar">
+
+        <div class="icon-bar" onclick="Show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <ul id="nav-lists">
+          <li class="close"><span onclick="Hide()">×</span></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="recipesall.html">Recipe</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact_Form.html">Contact Us</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+  <div id="main">
+    <nav>
+      <ul id="description">
+        <li>Prep: 20 mins</li>
+        <li>Cook: 22 mins</li>
+        <li>Serves 4</li>
+        <li>Easy</li>
+      </ul>
+      <h2>Nutrition per serving:</h2>
+      <ul>
+        <li>kcal: 476</li>
+        <li>fat: 22g</li>
+        <li>saturates: 4g</li>
+        <li>carbs: 31g</li>
+        <li>sugars: 15g</li>
+        <li>fibre: 9g</li>
+        <li>protein: 34g</li>
+        <li>salt: 0.3g</li>
+      </ul>
+
+      <blink>Order Now</blink>
+      <h4>Choose option from below:</h4>
+      <div id="wrap2">
+        <button onclick="myF1()">Swiggy</button>
+        <button onclick="myF2()">Uber Eats</button>
+        <button onclick="myF3()">Door-dash</button>
+        <button onclick="myF4()">Skip the dishes</button>
+      </div>
+
+    </nav>
+    <article id="article">
+      <h1>Turkey salad with grapes & walnuts</h1>
+      <!--<img src="images/Reema_images/salad3.jpg" id="salad"> -->
+
+
+
+
+      <div class="row">
+        <div class="column">
+          <img src="images/Reema_images/1.salad.jpg" onclick="myImages(this);">
+        </div>
+        <div class="column">
+          <img src="images/Reema_images/2.salad.jpg" onclick="myImages(this);">
+        </div>
+        <div class="column">
+          <img src="images/Reema_images/3.salad.jpg" onclick="myImages(this);">
+        </div>
+        <div class="column">
+          <img src="images/Reema_images/salad3.jpg" onclick="myImages(this);">
+        </div>
+      </div>
+      <div class="cont">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg">
+        <div id="imgtext"></div>
+      </div>
+
+
+
+
+
+
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>450g baby potatoes</li>
+        <li>150g pot bio yogurt</li>
+        <li>1 tsp English mustard powder</li>
+        <li>1 lime, zested and juiced</li>
+        <li>1 red onion, finely chopped</li>
+        <li>400g pack turkey mini breast fillets</li>
+        <li>1 tsp rapeseed or olive oil</li>
+        <li>1 Romaine lettuce heart (200g), thickly sliced</li>
+        <li>1⁄2 x 85g pack watercress</li>
+        <li>2 green peppers, deseeded and diced</li>
+        <li>2 avocados, halved and sliced</li>
+        <li>150g black or red seedless grapes, halved</li>
+        <li>40g walnuts, broken into pieces</li>
+      </ul>
+
+      <div id="move">
+        <div class="steps">
+          <h2 class="myDIV">Step1</h2>
+          <p class="hide">
+            Boil the potatoes for 12-15 mins until tender, then drain and leave to cool a little.
+            Cut the potatoes into thick slices. Mix together the yogurt, mustard and lime zest.
+            Toss the potatoes with 4 tbsp of the dressing and 3 tbsp of the onion.
+          </p>
+        </div>
+        <div class="steps">
+          <h2 class="myDIV">Step2</h2>
+          <p class="hide">
+            Put the turkey in a medium bowl and toss with the oil, then cook in a non-stick frying pan over a medium
+            heat for 10 mins,
+            turning at least once until the turkey is cooked through.
+          </p>
+        </div>
+
+        <div class="steps">
+          <h2 class="myDIV">Step3</h2>
+          <p class="hide">
+            When you’re ready to serve, mix half the lettuce, watercress, half of the remaining onion and 1 of the
+            peppers in a bowl.
+            Top with half the potatoes, and slice and pile on half the turkey. Toss the avocado with a good squeeze of
+            lime, then scatter half on top with half the grapes and half the walnuts.
+            Spoon over half of the remaining dressing.
+          </p>
+        </div>
+        <div class="steps">
+          <h2 class="myDIV">Step4</h2>
+          <p class="hide">
+            If packing this into lunchboxes, do the same with the remaining ingredients in the lunchboxes, but in
+            reverse, so the green salad is at the top.
+            Keep the dressing in a pot separately, to drizzle over just before eating.
+            Will keep chilled for two days.
+          </p>
+        </div>
+      </div>
+      <button onclick="ISPrint()">Print Ingredients and Steps</button>
+    </article>
+    <aside>
+
+      <h3>Would you like to receive an alert for the new receipes like this? </h3>
+      <button class="open-button" onclick="openForm()">Yes</button>
+
+      <div id="form-pop">
+        <form id="form-container" name="myForm">
+
+          <h1>Form</h1>
+
+          <label for="name"><b>Name:</b></label> 
+          <p id="output1"></p>
+          <input type="text" id="text" placeholder="Write your name here..."><br />
+          <!--Input type password means it will be useful to hide our password at the time of typing it-->
+          
+          <label for="email"><b>E-mail:</b></label>
+          <p id="output2"></p>
+          <input type="email" name="email" id="e-mail" placeholder="Write your email..." ><br />
+          <!--input type email means it will expect something like email-->
+          <p id="output"></p>
+          
+          <label for="name"><b>Phone Number:</b></label>
+          <p id="output3"></p>
+          <input type="number" name="phone" id="phone" placeholder="Write your Phone number..."><br />
+         
+          <button type="button" class="btn" onclick="validate(document.myForm.email)">Submit</button>
+          <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+
+
+      <!--<input type="checkbox" onclick="myForm()" id="check"> Yes, I will -->
+      <h3>Review:</h3>
+      <!--textarea is used to give some space to the user to enter some text-->
+      <textarea name="comments"></textarea></br>
+      <input type="Submit" name="Post Review" id="review" onclick="abc()">
+
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-wrap">
+      <div class="About_US">
+        <h3>About Us</h3>
+        <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new
+          receipe that world can explore.</p>
+        <p><a href="#" class="readmore">Read more</a></p>
+      </div>
+      <div class="navi">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="recipesall.html">Recipe</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact_Form.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="address">
+        <h3>Address</h3>
+        <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+      </div>
+      <div class="phone">
+        <h3>Telephone</h3>
+        <p>
+          <a href="#">+1 234 5678 910</a> <br>
+          <a href="#">+2 234 5678 910</a>
+        </p>
+      </div>
+      <div class="newsletter">
+        <h3>Join our newsletter</h3>
+        <p>Be the first to know our latest updates and news!</p>
+        <form action="#" method="">
+          <div class="form-subscribe">
+            <input type="email1" placeholder="Enter your email">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="js/Reema_js/app.js"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    
+  </script>
+</body>
+
+</html>

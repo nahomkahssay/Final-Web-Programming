@@ -1,0 +1,654 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    padding: 10px 16px;
+    position: fixed;
+  }
+
+#burrito{
+    margin-top: -500px;
+    margin-bottom: 380px;
+    text-align: center;
+    color: antiquewhite;
+    text-shadow:  2px 2px cyan;
+    font-size: 100px;
+}
+/*for fixed header*/
+.sticky {
+    position: fixed; 
+  }
+/*logo dimensions are mentioned*/
+.logo {
+    max-width: 320px;
+    overflow: hidden;
+}
+
+.logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px;
+}
+
+.container .logo a img {
+    max-width: 100%;
+    max-height: 60px;
+}
+
+.content img{
+    width:100%;
+}
+/*side button 1 is given css over here*/
+.btn1 {
+    position:fixed;
+    padding: 15px 25px;
+    right:35px;
+    top:250px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 9px #999;
+  }
+  .btn1 img{
+      width:25px;
+      height:25px;
+  }
+  .btn1:hover {
+      background-color: skyblue;
+      color:blue;
+    }
+  
+  .btn1:active {
+    background-color: aquamarine;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+    }
+    .btn1 .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px 0px 10px 10px;
+        padding: 5px 0px;
+        margin-left: -150px;
+        margin-top: 30px;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      
+    .tt1:hover .tooltiptext {
+        visibility: visible;
+      }
+
+    #ingredientsCard1{
+        background-color: rgb(247, 232, 96);
+        margin-top: -4px;
+        height:300px;
+    }
+    #ingredientsCard1 h1{
+        font-family: monospace;
+        text-align: center;
+        color: green;
+        font-size: 40px;
+        text-shadow: 3px 3px 3px #000000;
+    }
+    #ingredientsCard1 #innerCard1{
+        font-family: monospace;
+        margin-left: 60px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    #innerCard1 img{
+        margin-left: 600px;
+        margin-top: -200px;
+        width:200px;
+        height:150px;
+    }
+    #innerCard1 img:hover{
+               transform: scale(1.5);
+    }
+    #iC1{
+        margin-left: 950px;
+        margin-top: -148px;
+        font-style: oblique;
+    }
+
+/*side button 2 is given css over here*/
+    .btn2 {
+        position:fixed;
+        padding: 15px 25px;
+        right:35px;
+        top:350px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 9px #999;
+      }
+      
+    .btn2:hover {
+        background-color: skyblue;
+        color:blue;
+        }
+      
+    .btn2:active {
+        background-color: aquamarine;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px) 
+        }
+    .btn2 .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;       
+            border-radius: 10px 0px 10px 10px;
+            padding: 5px 0px;
+            margin-left: -150px;
+            margin-top: 0px;
+          
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+    }
+          
+    .tt2:hover .tooltiptext {
+            visibility: visible;
+    }
+    #ingredientsCard2 #img{
+        width:900px;
+    }
+    #innerCard2{
+        padding: 15px;
+        margin: 30px 30px 30px 300px;
+        width:50%; 
+        border-style: double;
+    }
+ /*Glowing effect of date and Time*/
+    #date {
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+    
+    /*side button 3 is given css over here*/
+    .btn3 {
+            position:fixed;
+            padding: 15px 25px;
+            right:35px;
+            top:450px;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 9px #999;
+        }
+    .btn3:hover {
+            background-color: skyblue;
+            color:blue;
+        }
+          
+    .btn3:active {
+            background-color: aquamarine;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px) 
+    }
+    .btn3 .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px 0px 10px 10px;
+        padding: 5px 0px;
+        margin-left: -170px;
+        margin-top: 30px;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      
+    .tt3:hover .tooltiptext {
+        visibility: visible;
+    }
+    #ingredientsCard3{
+        background-color: rgb(247, 232, 96);
+        margin-top: -4px;
+        height:250px;
+    }
+    #ingredientsCard3 h1{
+        font-family: monospace;
+        text-align: center;
+        color: green;
+        font-size: 40px;
+        text-shadow: 3px 3px 3px #000000;
+    }
+   #ingredientsCard3 #innerCard3{
+        font-family: monospace;
+        margin-left: 60px;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+   
+
+    /*Designing Header*/
+header{
+     box-shadow: 0 20px 20px -6px green;
+}
+.container {
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 1500px;
+    
+}
+
+.container .navbar {
+   justify-content: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0 10px;  
+}
+.container .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color:  black;
+    font-size: 18px;
+    font-weight:bolder;
+    text-transform: uppercase;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.container .navbar ul li a:hover {
+    color: blue;
+    background-color:  skyblue;
+}
+.container .navbar ul .close {
+    display: none;
+    text-align: right;
+    padding: 10px;
+}
+
+.container .navbar .icon-bar {
+    padding: 18px 8px;
+    width: 50px;
+    height: 60px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+/* start of footer styling */
+footer {
+    border: 2px solid grey;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.footer-wrap{
+    padding:20px 30px;
+    background-color: rgba(184, 56, 56, 0.822);
+}
+footer h3 {
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 10px;
+}
+footer p{
+    padding-bottom: 10px;
+}
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgb(190, 212, 221);
+}
+footer ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+footer .About_US,footer .navi,footer .address{
+    float: left;
+    width: 20%;
+    padding: 0px 20px;
+}
+footer .phone{
+    float: left;
+}
+footer .newsletter{
+    padding-top: 100px;
+}
+footer .form-subscribe{
+    padding-bottom: 50px;
+}
+
+#hamButton{
+    display: none;
+}
+#LeftSlider{
+    display: none;
+}
+
+/*responsive screen is designed with different screen sizes*/
+@media  screen and (max-width: 655px) {
+    #hamburger-menu table td{
+        border-radius: 2px;
+    }
+    #hamButton{
+        margin-left: 32%; 
+        margin-top: -5px;
+        padding: 2px;
+        background-color: green;
+        display: block;
+    }
+    #burrito{
+        margin-top: -200px;
+        margin-bottom: 110px;
+        text-align: center;
+        color: antiquewhite;
+        text-shadow:  2px 2px cyan;
+        font-size: 70px;
+    }
+    .container .navbar{
+        display: none;
+    }
+    #ingredientsCard1{
+        height:600px;
+    }
+    #ingredientsCard1 img{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    #ingredientsCard1 #iC1{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    #ingredientsCard2 #innerCard2{
+        margin-left: 120px;
+    }
+    #ingredientsCard3{
+        height:300px;
+    }
+    #ingredientsCard3 #innerCard3{
+        width:450px;
+        text-align: justify;
+    }
+   
+    #LeftSlider{
+        width: 100%;
+        background-color: rgba(184, 56, 56);
+        position: fixed;
+        z-index: 9;
+        display: none;
+    }
+    #LeftSlider Button{
+        margin-left: 550px;
+        margin-top: 30px;
+
+    }
+    #LeftSlider table{
+        margin-left: auto;
+        margin-right: auto;   
+        width: 80%; 
+    }
+    .content #LeftSlider tr td{
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    }
+    .content #LeftSlider tr{
+        width:100%;
+    }
+     /*glowing effect of date and time*/
+     #date {
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+}  
+  
+
+@media  screen and (max-width: 435px){
+    #hamburger-menu table td{
+        border-radius: 2px;
+    }
+    #hamButton{
+        margin-left: 17%; 
+        margin-top: -5px;
+        padding: 2px;
+        background-color: green;
+        display: block;
+    }
+    #burrito{
+        margin-top: -150px;
+        margin-bottom: 90px;
+        text-align: center;
+        color: antiquewhite;
+        text-shadow:  2px 2px cyan;
+        font-size: 50px;
+    }
+ 
+    #ingredientsCard1{
+        height:800px;
+    }
+    #ingredientsCard1 #innerCard1{
+        text-align: justify;
+        width:250px;
+    }
+    #ingredientsCard1 img{
+        margin-left: 40px;
+    }
+    #ingredientsCard2{
+        margin-left: -30px;
+    }
+    #ingredientsCard3{
+        height:450px;
+    }
+    #ingredientsCard3 #innerCard3{
+        width:250px;
+    }
+
+    #LeftSlider{
+        width: 100%;
+        background-color: rgba(184, 56, 56);
+        position: fixed;
+        z-index: 9;
+        display: none;
+    }
+    #LeftSlider Button{
+        margin-left: 350px;
+        margin-top: 30px;
+
+    }
+    #LeftSlider table{
+        margin-left: auto;
+        margin-right: auto;   
+        width: 80%; 
+    }
+    .content #LeftSlider tr td{
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    }
+    .content #LeftSlider tr{
+        width:100%;
+    }
+    /*glowing effect of date and time*/
+    #date {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+
+}
+    
+@media screen and (max-width:330px){
+    #hamburger-menu table td{
+        border-radius: 2px;
+    }
+    #hamButton{
+        
+        margin-left: 10%; 
+        margin-top: -5px;
+        padding: 2px;
+        background-color: green;
+        display: block;
+    }
+    #burrito{
+        margin-top: -100px;
+        margin-bottom: 60px;
+        text-align: center;
+        color: antiquewhite;
+        text-shadow:  2px 2px cyan;
+        font-size: 30px;
+    }
+    #LeftSlider{
+        width: 100%;
+        background-color: rgba(184, 56, 56);
+        position: fixed;
+        z-index: 9;
+        display: none;
+    }
+    #LeftSlider Button{
+        margin-left: 10px;
+        margin-top: 30px;
+
+    }
+    #LeftSlider table{
+        margin-left: auto;
+        margin-right: auto;   
+        width: 80%; 
+    }
+    .content #LeftSlider tr td{
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    }
+    .content #LeftSlider tr{
+        width:100%;
+    }
+
+
+    footer .submit{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    /*glowing effect of date and time*/
+    #date {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+}

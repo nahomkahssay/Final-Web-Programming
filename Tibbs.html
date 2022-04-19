@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/nahom1_styles.css">
+    <title>Tibbs</title>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a href="#"><img src="/images/nahom_images/logo.jpg" alt="logo"></a>
+          </div>
+          <div class="navbar">
+          <div class="icon-bar" onclick="Show()">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+    
+            <ul id="nav-lists">
+              <li class="close"><span onclick="Hide()">×</span></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="recipesall.html">Recipe</a></li>
+              <li><a href="FAQs.html">FAQs</a></li>
+              <li><a href="Contact_Form.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div id="b_color">
+      <aside class="aside_bar">
+        <h2>Recipe</h2>
+        <ul>
+            <li>1 large red onion, about 2 cups, sliced thin</li>
+            <li>1/4 cup niter kebbeh or ghee spiced butter</li>
+            <li>2 pounds venison, lamb or beef, cut into bite-sized pieces</li>
+            <li>2 tablespoons berbere</li>
+            <li>1 teaspoon ground fenugreek</li>
+            <li>1/2 teaspoon cardamom (optional)</li>
+            <li>1/2 teaspoon ground ginger</li>
+            <li>1/4 teaspoon cumin</li>
+            <li>1/4 teaspoon ground clove</li>
+            <li>1 teaspoon black pepper</li>
+            <li>3 to 4 garlic cloves, sliced thinly</li>
+            <li>2 cups whole peeled tomatoes, broken into bits</li>
+            <li>1 to 5 green chiles, such as jalapenos or serranos</li>
+            <li>1/2 cup red wine</li>
+        </ul>
+        <div id="form">
+        <h4>Make Reservation for Tutorial on how to make Tibbs</h4>
+        <form onsubmit="saveToFile()">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName"> <br />
+          <label for="email">Email</label>s
+          <input type="email" id="email"> <br />
+          <label for="telephone">Telephone</label>
+          <input type="tel" id="telephone" /><br />
+          <label for="date">Date</label>
+          <input type="date" id="date"><br />
+          <input type="submit" value="submit">
+        </form>
+      </div>
+    </aside>
+
+    <main>
+        <img src="/images/nahom_images/tibs2.jpeg" alt="tibs2">
+        <div id="aln">
+            <h2>The Story of Tibbs</h2>
+            <p>Tibs (ጥብስ), written as tebs, t'ibs or tibbs, is a culinary specialty from Ethiopia. While its exact origins remain unknown, it is likely that it had its roots in the Aksumite Empire, like many other traditional Ethiopian dishes.Tibbs can be served raw and cooked.</p>
+            <p>Ethiopians are known to be avid meat lovers, and tibs has become a staple of local cuisine over the centuries. For a long time, it was synonymous with festivals and special occasions, with the exception of fasting periods when the consumption of meat is prohibited.</p>
+        </div>        
+    </main>
+
+    <aside>
+        <img src="/images/nahom_images/tibs.3.webp" alt="tibs3">
+        <div id="pfg">
+            <h2 class="lleft">Ethiopian Beef Tibbs</h2>
+            <p>Anyone who has had a savoury experience with Ethiopian cuisine will talk about its distinctiveness and delicious taste. Not surprising for a country with a rich cultural history that can be traced to the early beginnings of civilisation.</p>
+            <p>Tibs is easy to make and delicious. Like many Ethiopian dishes, tibs relies on berbere spice for its signature flavor. Berbere is one of the most common Ethiopian spice blends</p>
+        </div>
+    </aside>
+    </div>
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="About_US">
+          <h3>About Us</h3>
+          <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new receipe that world can explore.</p>
+          <p><a href="#" class="readmore">Read more</a></p>
+        </div>
+        <div class="navi">
+          <h3>&emsp;&emsp;Navigation</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All Receipes</a></li>
+            <li><a href="#">Our Chef's</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h3>Address</h3>
+          <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+        </div>
+        <div class="phone">
+          <h3>Telephone</h3>
+          <p>
+            <a href="#">+1 234 5678 910</a> <br>
+            <a href="#">+2 234 5678 910</a>
+          </p>
+        </div>
+        <div class="newsletter">
+          <h3>Join our newsletter</h3>
+          <p>Be the first to know our latest updates and news!</p>
+          <form action="#" method="">
+            <div class="form-subscribe">
+              <input type="email" placeholder="Enter your email">
+              <input type="submit" value="Subscribe">
+            </div>
+          </form>
+        </div>
+      </div>      
+    </footer>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("input").focus(function(){
+              $(this).css("background-color", "grey");
+            });
+            $("input").blur(function(){
+              $(this).css("background-color", "grey");
+            });
+          });
+
+          $(document).ready(function(){
+            $("button").click(function(){
+              $(this).hide();
+            });
+          });
+    </script>
+    
+    <script type="text/javascript" src="/js/nahom.js"></script>
+  </body>
+</html>
